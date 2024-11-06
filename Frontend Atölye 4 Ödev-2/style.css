@@ -1,0 +1,55 @@
+
+body {
+    font-family: Arial, sans-serif; /*body içerisindeki font tipini değiştirdim*/
+    background-color: #f4f4f9; /*Arkaplan rengini değiştirdim.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /*bu özellikleri formu hizalamak için kullandım*/
+}
+
+h1 {
+    color: #333; /*h1 içerisindeki yazının rengini değiştirdim*/
+    text-align: center; /*h1 içerisindeki yazıyı ortaladım*/
+    position: fixed; /*h1 in konumunu sabitledim*/
+    top: 0; /*h1 etiketindeki yazının sayfanın üstüne hizalanmasını sağladım*/
+    width: 100%; /*yatayda 100% yer kaplaması için bu kodu kullandım*/
+    padding: 15px; /*h1 etiketine 15px dış boşluk ekledim*/
+    background-color: #ffffff; /*h1 etiketinin arkaplan rengini değiştirdim*/
+    margin: 0; /*sayfanın üzerinde etiketle arasında boşluk kalmaması için kullandım*/
+}
+
+form {
+    background-color: #ffffff; /*Formun arkaplanını değiştirdim*/
+    border-radius: 8px; /*formun kenarlarını 8px yuvarladım*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /*formun gölgelendirmesini ayarladım bu gölge formun altında ve yanlarında gözükmektedir*/
+    padding: 20px; /*forma 20px dış boşluk verdim*/
+    width: 300px; /*formun genişliğini 300px olarak ayarladım*/
+    display: flex; /* form içindeki öğelerin dikey sıralama, hizalama ve esnek düzenleme için kullanılan ana araçtır.*/
+    flex-direction: column; /*form elemanlarını dikey olarak sıralamamı sağladı bu özelliği sildiğimde özellikler yan yana sıralanmaktadır*/
+}
+
+input[type="text"] { /*özellikleri girdiğimiz alan (text kısmı)*/
+    padding: 10px; /*kutucukların içerisinde 10px lik dış boşluk oluşturdum*/
+    border: 1px solid #ccc; /*text kutucuklarına 1px lik solid özellikli çerçeve ekledim ve rengini değiştirdim*/
+    border-radius: 5px; /*text kutucuklarının kenarlarını 5px yuvarladım*/
+    margin-top: 5px; /*text kutucuklarının top kısımlarına 5 px lik margin boluğu ekledim bu şekilde örneğin adınız kısmı ile text kutucuğu kısmı arasında boşluk oluşmuş oldu bu okunulabiliriği arttırır*/
+    font-size: 16px; /*font boyutunu 16px olarak ayarladım*/
+}
+
+input[type="submit"] { /*submit butonu*/
+    margin-top: 20px; /*submit butonunun üstünde 20px lik boşluk oluşturdum*/
+    padding: 10px; /*10px lik dış boşluk oluşturdum*/
+    font-size: 16px; /*font boyutunu 16 px yaptım*/
+    color: #fff; /*buton içerisindeki yazının rengini ayarladım*/
+    background-color: cadetblue; /*butonun asıl rengini belirledim*/
+    border: none; /*çerçevesini gözükmeyecek şekilde yaptım bu özelliği silince çerçevem siyah olarak gözükmektedir*/
+    border-radius: 5px; /*çerçevesini 5px yuvarladım*/
+    cursor: pointer; /*butonun tıklanabilir olduğunu belirttim mouse ile üzerinde gelince anlaşılıyor*/
+    transition: background-color 0.3s; /*butonun rengini 0.3 saniyelik geçişli hale getirdim*/
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /*transition: background-color 0.3s; mouse butonun üzerine geldiğinde rengi değişmektedir*/
+}
